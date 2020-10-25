@@ -103,6 +103,6 @@ def process_incoming_commands():
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
-# client.connect("127.0.0.1, 1883, 60")
-client.connect('192.168.2.2', 1883, 60)
+client.connect("127.0.0.1, 1883, 60")
+# client.connect('192.168.2.2', 1883, 60)
 client.loop_forever()
